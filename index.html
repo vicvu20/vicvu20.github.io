@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Victor Vu | Computer Science</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background-color: #0f172a;
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 10%;
+        }
+
+        .hero p:first-child {
+            color: #38bdf8;
+            font-size: 18px;
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            margin: 5px 0;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        .hero-description {
+            max-width: 650px;
+            color: #94a3b8;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            width: fit-content;
+            padding: 12px 24px;
+            background-color: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #7dd3fc;
+        }
+
+        /* General sections */
+        section {
+            padding: 80px 10%;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        /* About */
+        .about p {
+            max-width: 800px;
+            color: #94a3b8;
+            font-size: 17px;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background-color: #1e293b;
+            padding: 10px 16px;
+            border-radius: 6px;
+        }
+
+        /* Projects */
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background-color: #1e293b;
+            padding: 25px;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            margin-bottom: 10px;
+            color: #f8fafc;
+        }
+
+        .project-card p {
+            color: #94a3b8;
+            margin-bottom: 15px;
+        }
+
+        .project-card a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        /* Contact */
+        .contact p {
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+            border-top: 1px solid #1e293b;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            .hero h1 {
+                font-size: 44px;
+            }
+
+            .hero h2 {
+                font-size: 25px;
+            }
+
+            nav ul {
+                gap: 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Victor Vu</h2>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <p>Hello, my name is</p>
+
+        <h1>Victor Vu.</h1>
+
+        <h2>Computer Science Student & Software Developer</h2>
+
+        <p class="hero-description">
+            I'm a Computer Science student at Georgia State University
+            interested in software engineering and building practical
+            applications. Welcome to my portfolio.
+        </p>
+
+        <a href="#projects" class="button">View My Projects</a>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I'm a Computer Science student at Georgia State University
+            with experience developing full-stack applications, mobile
+            applications, and software projects using technologies such
+            as React, TypeScript, JavaScript, Flutter, Node.js, and SQL.
+            
+            I'm currently focused on improving my software engineering
+            skills and preparing to begin my career as a software developer.
+        </p>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">Java</div>
+            <div class="skill">Python</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">TypeScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Flutter</div>
+            <div class="skill">Git</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="projects-container">
+
+            <!-- StudySync -->
+            <div class="project-card">
+
+                <h3>StudySync</h3>
+
+                <p>
+                    Full-stack study group application that helps students
+                    find study partners, create groups, schedule sessions,
+                    communicate with group members, and manage courses.
+                </p>
+
+                <p>
+                    <strong>React • TypeScript • Node.js • Express • PostgreSQL</strong>
+                </p>
+
+                <a href="#" target="_blank">View on GitHub →</a>
+
+            </div>
+
+
+            <!-- Unity Project -->
+            <div class="project-card">
+
+                <h3>Unity Platform Game</h3>
+
+                <p>
+                    A Unity game featuring player movement, jumping,
+                    collectible coins, obstacles, moving hazards, lives,
+                    and win/lose conditions.
+                </p>
+
+                <p>
+                    <strong>Unity • C#</strong>
+                </p>
+
+                <a href="#" target="_blank">View Project →</a>
+
+            </div>
+
+
+            <!-- Project 3 -->
+            <div class="project-card">
+
+                <h3>More Projects Coming Soon</h3>
+
+                <p>
+                    Additional software engineering and computer science
+                    projects will be added here.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>
+            I'm currently open to software engineering opportunities
+            and would be happy to connect.
+        </p>
+
+        <a href="mailto:YOUR_EMAIL@gmail.com" class="button">
+            Email Me
+        </a>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 Victor Vu</p>
+    </footer>
+
+</body>
+</html>
