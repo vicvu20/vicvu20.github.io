@@ -4,360 +4,529 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Victor Vu | Computer Science</title>
+    <meta
+        name="description"
+        content="Victor Vu — Computer Science student and software developer portfolio."
+    >
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <title>Victor Vu | Software Developer</title>
 
-        html {
-            scroll-behavior: smooth;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #0f172a;
-            color: #e2e8f0;
-            line-height: 1.6;
-        }
-
-        /* Navigation */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 10%;
-            background-color: #0f172a;
-            position: sticky;
-            top: 0;
-            border-bottom: 1px solid #1e293b;
-        }
-
-        nav h2 {
-            color: #38bdf8;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 30px;
-        }
-
-        nav a {
-            color: #e2e8f0;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            color: #38bdf8;
-        }
-
-        /* Hero */
-        .hero {
-            min-height: 85vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 0 10%;
-        }
-
-        .hero p:first-child {
-            color: #38bdf8;
-            font-size: 18px;
-        }
-
-        .hero h1 {
-            font-size: 64px;
-            margin: 5px 0;
-        }
-
-        .hero h2 {
-            font-size: 32px;
-            color: #94a3b8;
-            margin-bottom: 20px;
-        }
-
-        .hero-description {
-            max-width: 650px;
-            color: #94a3b8;
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-
-        .button {
-            display: inline-block;
-            width: fit-content;
-            padding: 12px 24px;
-            background-color: #38bdf8;
-            color: #0f172a;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-        }
-
-        .button:hover {
-            background-color: #7dd3fc;
-        }
-
-        /* General sections */
-        section {
-            padding: 80px 10%;
-        }
-
-        section h2 {
-            font-size: 32px;
-            margin-bottom: 30px;
-        }
-
-        /* About */
-        .about p {
-            max-width: 800px;
-            color: #94a3b8;
-            font-size: 17px;
-        }
-
-        /* Skills */
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .skill {
-            background-color: #1e293b;
-            padding: 10px 16px;
-            border-radius: 6px;
-        }
-
-        /* Projects */
-        .projects-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .project-card {
-            background-color: #1e293b;
-            padding: 25px;
-            border-radius: 10px;
-            transition: transform 0.2s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .project-card h3 {
-            margin-bottom: 10px;
-            color: #f8fafc;
-        }
-
-        .project-card p {
-            color: #94a3b8;
-            margin-bottom: 15px;
-        }
-
-        .project-card a {
-            color: #38bdf8;
-            text-decoration: none;
-        }
-
-        /* Contact */
-        .contact p {
-            color: #94a3b8;
-            margin-bottom: 20px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #64748b;
-            border-top: 1px solid #1e293b;
-        }
-
-        /* Mobile */
-        @media (max-width: 700px) {
-            .hero h1 {
-                font-size: 44px;
-            }
-
-            .hero h2 {
-                font-size: 25px;
-            }
-
-            nav ul {
-                gap: 15px;
-                font-size: 14px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Background decoration -->
+    <div class="background-grid"></div>
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
     <!-- Navigation -->
-    <nav>
-        <h2>Victor Vu</h2>
+    <header class="header">
+        <nav class="navbar container">
 
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+            <a href="#home" class="logo" aria-label="Home">
+                VV<span>.</span>
+            </a>
 
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Work</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
+            <!-- We'll add your actual resume later -->
+            <a href="#" class="resume-button">
+                Resume
+                <span>↗</span>
+            </a>
 
-        <p>Hello, my name is</p>
-
-        <h1>Victor Vu.</h1>
-
-        <h2>Computer Science Student & Software Developer</h2>
-
-        <p class="hero-description">
-            I'm a Computer Science student at Georgia State University
-            interested in software engineering and building practical
-            applications. Welcome to my portfolio.
-        </p>
-
-        <a href="#projects" class="button">View My Projects</a>
-
-    </section>
+        </nav>
+    </header>
 
 
-    <!-- About -->
-    <section class="about" id="about">
+    <main>
 
-        <h2>About Me</h2>
+        <!-- ================= HERO ================= -->
 
-        <p>
-            I'm a Computer Science student at Georgia State University
-            with experience developing full-stack applications, mobile
-            applications, and software projects using technologies such
-            as React, TypeScript, JavaScript, Flutter, Node.js, and SQL.
-            
-            I'm currently focused on improving my software engineering
-            skills and preparing to begin my career as a software developer.
-        </p>
+        <section class="hero container" id="home">
 
-    </section>
+            <div class="hero-content reveal">
 
+                <div class="status">
+                    <span class="status-dot"></span>
+                    Open to Software Engineering Opportunities
+                </div>
 
-    <!-- Skills -->
-    <section id="skills">
+                <p class="eyebrow">Hi, I'm Victor Vu.</p>
 
-        <h2>Skills</h2>
+                <h1>
+                    I build software that
+                    <span>solves real problems.</span>
+                </h1>
 
-        <div class="skills-container">
-
-            <div class="skill">Java</div>
-            <div class="skill">Python</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">TypeScript</div>
-            <div class="skill">React</div>
-            <div class="skill">Node.js</div>
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">SQL</div>
-            <div class="skill">Flutter</div>
-            <div class="skill">Git</div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Projects -->
-    <section id="projects">
-
-        <h2>Projects</h2>
-
-        <div class="projects-container">
-
-            <!-- StudySync -->
-            <div class="project-card">
-
-                <h3>StudySync</h3>
-
-                <p>
-                    Full-stack study group application that helps students
-                    find study partners, create groups, schedule sessions,
-                    communicate with group members, and manage courses.
+                <p class="hero-description">
+                    Computer Science student at Georgia State University
+                    focused on software engineering, full-stack development,
+                    and building useful applications.
                 </p>
 
-                <p>
-                    <strong>React • TypeScript • Node.js • Express • PostgreSQL</strong>
-                </p>
+                <div class="hero-actions">
 
-                <a href="#" target="_blank">View on GitHub →</a>
+                    <a href="#projects" class="primary-button">
+                        View My Work
+                        <span>↓</span>
+                    </a>
+
+                    <!-- Replace # with your real links -->
+                    <a
+                        href="https://github.com/vicvu20"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-link"
+                    >
+                        GitHub ↗
+                    </a>
+
+                    <a href="#" class="text-link">
+                        LinkedIn ↗
+                    </a>
+
+                </div>
 
             </div>
 
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
 
-            <!-- Unity Project -->
-            <div class="project-card">
+        </section>
 
-                <h3>Unity Platform Game</h3>
 
-                <p>
-                    A Unity game featuring player movement, jumping,
-                    collectible coins, obstacles, moving hazards, lives,
-                    and win/lose conditions.
-                </p>
+        <!-- ================= ABOUT ================= -->
 
-                <p>
-                    <strong>Unity • C#</strong>
-                </p>
+        <section class="section container" id="about">
 
-                <a href="#" target="_blank">View Project →</a>
+            <div class="section-heading reveal">
+                <span class="section-number">01.</span>
+
+                <div>
+                    <p class="section-label">ABOUT</p>
+                    <h2>A little about me.</h2>
+                </div>
+            </div>
+
+            <div class="about-grid reveal">
+
+                <div class="about-main">
+
+                    <p class="large-text">
+                        I'm a Computer Science student who enjoys turning
+                        ideas into functional, well-designed software.
+                    </p>
+
+                    <p>
+                        My interests are centered around software engineering
+                        and full-stack development. I enjoy working across
+                        both the frontend and backend and learning how all
+                        parts of an application work together.
+                    </p>
+
+                    <p>
+                        I'm currently building my experience through academic
+                        and personal projects while preparing to begin my
+                        career as a software engineer.
+                    </p>
+
+                </div>
+
+                <div class="about-card">
+
+                    <div class="info-row">
+                        <span>University</span>
+                        <strong>Georgia State University</strong>
+                    </div>
+
+                    <div class="info-row">
+                        <span>Major</span>
+                        <strong>Computer Science</strong>
+                    </div>
+
+                    <div class="info-row">
+                        <span>Focus</span>
+                        <strong>Software Engineering</strong>
+                    </div>
+
+                    <div class="info-row">
+                        <span>Location</span>
+                        <strong>Atlanta, GA</strong>
+                    </div>
+
+                </div>
 
             </div>
 
+        </section>
 
-            <!-- Project 3 -->
-            <div class="project-card">
 
-                <h3>More Projects Coming Soon</h3>
+        <!-- ================= PROJECTS ================= -->
 
-                <p>
-                    Additional software engineering and computer science
-                    projects will be added here.
-                </p>
+        <section class="section container" id="projects">
+
+            <div class="section-heading reveal">
+                <span class="section-number">02.</span>
+
+                <div>
+                    <p class="section-label">FEATURED WORK</p>
+                    <h2>Projects I've built.</h2>
+                </div>
+            </div>
+
+
+            <div class="projects">
+
+                <!-- STUDYSYNC -->
+                <article class="project featured-project reveal">
+
+                    <div class="project-visual studysync-visual">
+
+                        <div class="browser">
+
+                            <div class="browser-bar">
+                                <div class="browser-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="browser-address">
+                                    StudySync
+                                </div>
+                            </div>
+
+                            <div class="mock-app">
+
+                                <div class="mock-sidebar">
+                                    <div class="mock-logo"></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+
+                                <div class="mock-content">
+
+                                    <div class="mock-title"></div>
+
+                                    <div class="mock-cards">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+
+                                    <div class="mock-panel"></div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-info">
+
+                        <div class="project-top">
+                            <span class="project-type">
+                                FEATURED PROJECT
+                            </span>
+
+                            <span class="project-number">
+                                01
+                            </span>
+                        </div>
+
+                        <h3>StudySync</h3>
+
+                        <p>
+                            A full-stack platform designed to help students
+                            connect with study partners, organize groups,
+                            schedule study sessions, and communicate with
+                            classmates.
+                        </p>
+
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>PostgreSQL</span>
+                        </div>
+
+                        <div class="project-links">
+
+                            <!-- Replace # with the StudySync repo -->
+                            <a href="#">
+                                GitHub ↗
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- UNITY PROJECT -->
+                <article class="project project-small reveal">
+
+                    <div class="project-small-visual">
+
+                        <div class="game-scene">
+                            <div class="game-platform platform-one"></div>
+                            <div class="game-platform platform-two"></div>
+                            <div class="game-platform platform-three"></div>
+
+                            <div class="game-player"></div>
+
+                            <div class="coin coin-one"></div>
+                            <div class="coin coin-two"></div>
+                            <div class="coin coin-three"></div>
+
+                            <div class="obstacle"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <div class="project-top">
+                            <span class="project-type">
+                                GAME DEVELOPMENT
+                            </span>
+
+                            <span class="project-number">
+                                02
+                            </span>
+                        </div>
+
+                        <h3>Unity Platformer</h3>
+
+                        <p>
+                            A Unity platform game featuring player movement,
+                            jumping, collectibles, moving obstacles, a lives
+                            system, and win and loss conditions.
+                        </p>
+
+                        <div class="tech-stack">
+                            <span>Unity</span>
+                            <span>C#</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="#">
+                                View Project ↗
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- FUTURE PROJECT -->
+                <article class="project project-small coming-soon reveal">
+
+                    <div class="coming-soon-content">
+
+                        <span class="plus">+</span>
+
+                        <p>More projects coming soon.</p>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <div class="project-top">
+                            <span class="project-type">
+                                NEXT PROJECT
+                            </span>
+
+                            <span class="project-number">
+                                03
+                            </span>
+                        </div>
+
+                        <h3>Currently Building</h3>
+
+                        <p>
+                            I'm continuing to build new projects and explore
+                            new technologies. Check back soon for more.
+                        </p>
+
+                    </div>
+
+                </article>
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- Contact -->
-    <section class="contact" id="contact">
+        <!-- ================= SKILLS ================= -->
 
-        <h2>Contact Me</h2>
+        <section class="section container" id="skills">
 
-        <p>
-            I'm currently open to software engineering opportunities
-            and would be happy to connect.
-        </p>
+            <div class="section-heading reveal">
+                <span class="section-number">03.</span>
 
-        <a href="mailto:YOUR_EMAIL@gmail.com" class="button">
-            Email Me
-        </a>
+                <div>
+                    <p class="section-label">TECHNOLOGIES</p>
+                    <h2>Tools I work with.</h2>
+                </div>
+            </div>
 
-    </section>
 
+            <div class="skills-grid reveal">
+
+                <div class="skill-category">
+
+                    <span class="skill-icon">&lt;/&gt;</span>
+
+                    <h3>Languages</h3>
+
+                    <div class="skill-list">
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>JavaScript</span>
+                        <span>TypeScript</span>
+                        <span>C#</span>
+                        <span>SQL</span>
+                        <span>HTML / CSS</span>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-category">
+
+                    <span class="skill-icon">{ }</span>
+
+                    <h3>Frameworks</h3>
+
+                    <div class="skill-list">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>Flutter</span>
+                        <span>Unity</span>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-category">
+
+                    <span class="skill-icon">⌘</span>
+
+                    <h3>Tools & Technologies</h3>
+
+                    <div class="skill-list">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>PostgreSQL</span>
+                        <span>Prisma</span>
+                        <span>Docker</span>
+                        <span>VS Code</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="contact-section container" id="contact">
+
+            <div class="contact-box reveal">
+
+                <p class="section-label">WHAT'S NEXT?</p>
+
+                <h2>
+                    Let's build something
+                    <span>great.</span>
+                </h2>
+
+                <p>
+                    I'm currently looking for software engineering
+                    opportunities and would love to connect.
+                </p>
+
+                <!-- Replace with your email -->
+                <a
+                    href="mailto:YOUR_EMAIL@gmail.com"
+                    class="primary-button"
+                >
+                    Get In Touch
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
 
     <footer>
-        <p>© 2026 Victor Vu</p>
+
+        <div class="container footer-content">
+
+            <p>
+                Designed & built by Victor Vu.
+            </p>
+
+            <div class="footer-links">
+
+                <a
+                    href="https://github.com/vicvu20"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+
+                <a href="#">
+                    LinkedIn
+                </a>
+
+                <a href="#home">
+                    Back to top ↑
+                </a>
+
+            </div>
+
+        </div>
+
     </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>
-
